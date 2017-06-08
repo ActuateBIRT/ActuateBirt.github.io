@@ -1,11 +1,42 @@
 <html>
 <head>
-<title>R Support Download</title>
+<title>OpenText R Support Download</title>
 </head>
 <body>
-<h2>Download and Install R Support for OpenText Analytics InformationHub</h2>
-<li>Download the <a href="com.actuate.birt.script.ext.rserve_24.2.0.v201705292336.jar">com.actuate.birt.script.ext.rserve</a> plugin by clicking on the link.
-<li>Save the jar file locally. The file name should be in the form com.actuate.birt.script.ext.rserve_24.2.0.vnnnnnnnnnnnn.jar.
-<li>Copy the downloaded jar file to directory "modules/BIRTiHub/iHub/web/birtservice/WEB-INF/platform/plugins" under iHub home.
+<h1>Offline Installation of R Support Feature for OpenText™  Analytics Products</h1>
+<ol>
+<h2><li> Download and Install R Support Feature for <i>BIRT Designer Professional®</i> (Release 16.2)</li></h2>
+<ul>
+<li>Download the R Support update site as a zip file: <a href="com.actuate.birt.script.r.support.update-24.2.0.zip">com.actuate.birt.script.r.support.update-24.2.0.zip</a><br>
+<br>
+<li>Open BIRT Designer Professional (BDPro). Select menu "Help | Install New Software..."<br>
+<img src="img/help-install.png"><br>
+<br>
+<li>In the Available Software dialog, click on "Add..." next to "Works with" input. Then click on the "Archive..." button: <br>
+<img src="img/install-archive.png"><br>
+<li>Browse to the ZIP file that you have downloaded above and select it. Click on "OK" to close the "Add Repository" dialog. <br><br>
+<li>Back in the Available Software dialog, select "R Support for BIRT", the only category available, and choose "Next >" <br>
+<img src="img/install-2.png"><br>
+
+<li>In the next few dialogs, review the installation details, read and accept the licenses, then select "Finish" to complete the installation. You will be asked to restart BDPro. <br>
+<br>
+
+<li>After restarting BDPro, R Support feature should be enabled. 
+To test that this feature is working correctly, open menu "Window | Preferences", the browse to "OpenText BIRT" / "Rserve Connection".
+Enter the connection information to a running Rserve instance, and click on "Test Connection" to make sure that BDPro is able to connect to R <br>
+<img src="img/test-conn.png"><br>
+</ul>
+<h2><li> Download and Install R Support Feature for <i>Information Hub®</i> (Release 16.2)</li> </h2>
+<ul>
+<li>Download the plugin <a href="com.actuate.birt.script.ext.rserve_24.2.0.v201705292336.jar">com.actuate.birt.script.ext.rserve</a>. 
+ Save the jar file locally. The file name should be in the form <i>com.actuate.birt.script.ext.rserve_24.2.0.vnnnnnnnnnnnn.jar</i>.
+<br><br>
+<li>On each iHub node, copy the downloaded jar file to directory "modules/BIRTiHub/iHub/web/birtservice/WEB-INF/platform/plugins" under iHub home.
+<br><br>
+<li>From iHub System Console, shut down then restart the iHub cluster. Alternatively, you may shut down and restart each iHub node from the command line or Windows Service Manager.
+<br><br>
+<li>After iHub is restarted, you should log on to iHub System Console to configure R connectivity. 
+</ul>
+</ol>
 </body>
 </html>
