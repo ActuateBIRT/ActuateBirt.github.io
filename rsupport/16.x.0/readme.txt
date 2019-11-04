@@ -12,7 +12,7 @@ How to install the Rserve plug-in for Analytics Designer:
 2. Choose Help > Install New Software from the main menu.
 
 3. In Work with, enter the following URL:
-https://actuatebirt.github.io/rsupport/16.x.0/update
+https://actuatebirt.github.io/rsupport/16.x.0
 
 4. Click Add. In Name, enter Rserve plug-in, and choose Add to save this location.
 
@@ -29,7 +29,7 @@ https://actuatebirt.github.io/rsupport/16.x.0/update
 How to install the Rserve plug-in for BI & Reporting:
 
 1. Download com.actuate.birt.script.ext.rserve_24.2.0.<time stamp>.jar from the following GitHub location:
-https://actuatebirt.github.io/rsupport/16.x.0/download/
+https://actuatebirt.github.io/rsupport/16.x.0
 
 2. Copy the file to:
 <AC_SERVER_HOME>\web\birtservice\WEB-INF\platform\plugins
