@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>OpenText R Support Download</title>
+</head>
+<body>
+<h1>Installing R support for OpenText&trade; Magellan&trade; BI &amp; Reporting</h1>
+<p>You must install the Rserve plug-in to enable R integration in OpenText&trade; Magellan&trade; Analytics Designer and OpenText Magellan BI &amp; Reporting. Analytics Designer and BI &amp; Reporting use a dedicated plug-in to connect to and query Rserve. The plug-in contains third-party libraries licensed under LGPL 2.1.</p>
+<h3>How to install the Rserve plug-in for Analytics Designer:</h3>
+<ol>
+<li>Download the R support update as a zip file from here: <br>
+<a href="com.actuate.birt.script.r.support.update-24.2.0.zip">com.actuate.birt.script.r.support.update-24.2.0.zip</a>
+<br><br>
+<li>Open Analytics Designer. 
+<br><br>
+<li>Choose Help > Install New Software.
+<br><br>
+<img src="img/help-install.png">
+<br><br>
+<li>In Available Software, choose Add. Then choose Archive. 
+<br><br>
+<img src="img/install-archive.png">
+<br><br>
+<li>Browse to the ZIP file that you downloaded and select it. Choose Open. Choose Add to close the dialog.
+<br><br>
+<li>In Available Software, select R Support for BIRT. Choose Next.
+<br><br>
+<img src="img/install-2.png">
+<br><br>
+<li>Review the items to be installed, and choose Next.
+<br><br>
+<li>Choose I accept the terms of the license agreement. Choose Finish.
+<br><br>
+<li>Choose Install anyway to accept the unsigned content.
+<br><br>
+<li>When the installation completes, choose Restart Now to restart Analytics Designer.
+<br><br>
+<li>To test that R support is enabled, open Window > Preferences, and select OpenText BIRT - Rserve Connection.
+Enter the connection information for the Rserve instance, and choose Test Connection to verify that Analytics Designer is able to connect to R.
+<br><br>
+<img src="img/test-conn.png">
+<br><br>
+For more information, see <i>Analytics Designer User Guide</i>, available as product help and also on http://mysupport.opentext.com.
+</ol>
+<h3>How to install the Rserve plug-in for BI &amp; Reporting:</h3>
+<ol>
+<li>Download the plugin <a href="com.actuate.birt.script.ext.rserve_24.2.0.v201705292336.jar">com.actuate.birt.script.ext.rserve</a>. 
+ Save the jar file locally. The file name is com.actuate.birt.script.ext.rserve_24.2.0.v201705292336.jar.
+<br><br>
+<li>Copy the file to:<br>
+&lt;AC_SERVER_HOME&gt;\web\birtservice\WEB-INF\platform\plugins
+<br><br>
+<li>Restart BI &amp; Reporting.
+<br><br>
+<li>After BI &amp; Reporting is restarted, log on to System Console to configure R connectivity. For more information, see <i>BI &amp; Reporting Installation, Configuration,
+and Administration Guide</i>, available as product help and also on http://mysupport.opentext.com.
+<br><br>
+</ol>
+</body>
+</html>
