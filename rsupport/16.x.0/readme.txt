@@ -7,8 +7,9 @@ The plug-in contains third-party libraries licensed under LGPL 2.1.
 
 How to install the Rserve plug-in for Analytics Designer:
 
-1. Download the R support update com.actuate.birt.script.r.support.update-24.2.0.zip file.
-     
+1. Download the R support update zip file from here:
+     https://actuatebirt.github.io/rsupport/16.x.0/download/com.actuate.birt.script.r.support.update-24.2.0.zip 
+
 2. Open Analytics Designer. 
 
 3. Choose Help > Install New Software.
@@ -30,8 +31,8 @@ How to install the Rserve plug-in for Analytics Designer:
 
 How to install the Rserve plug-in for BI & Reporting:
 
-1. Download com.actuate.birt.script.ext.rserve_24.2.0.v201705292336.jar from the following location:
-     https://actuatebirt.github.io/rsupport/16.x.0/download/
+1. Download the jar file from here:
+     https://actuatebirt.github.io/rsupport/16.x.0/download/com.actuate.birt.script.ext.rserve_24.2.0.v201705292336.jar
 
 2. Copy the file to:
      <AC_SERVER_HOME>\web\birtservice\WEB-INF\platform\plugins
